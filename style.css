@@ -1,0 +1,122 @@
+  html { overflow-y: hidden; }
+
+@keyframes moveBackground {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        body {
+            padding: 15%;
+            background: radial-gradient(
+                circle at top left,
+                rgba(0, 0, 0, 0.9) 0%,
+                rgba(0, 0, 0, 0.95) 10%,
+                rgba(0, 0, 0, 0.93) 20%,
+                rgba(0, 0, 0, 0.91) 30%,
+                rgba(0, 0, 0, 0.89) 40%,
+                rgba(0, 0, 0, 0.87) 50%,
+                rgba(0, 0, 0, 0.85) 60%,
+                rgba(0, 0, 0, 0.83) 70%,
+                rgba(0, 0, 0, 0.81) 80%,
+                rgba(0, 0, 0, 0.8) 90%,
+                rgba(0, 0, 0, 0.75) 100%
+            );
+            background-size: 100% 250%;
+            animation: moveBackground 10s ease infinite;
+          
+        }
+.firstline {
+	font-size: 3em;
+	text-align: center;
+
+}
+
+.secondline {
+	font-size: 3em;
+	text-align: center;
+}
+
+.secondline, .firstline {
+	font-family: 'Quicksand', sans-serif;
+	line-height: .7;
+}
+
+
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+  .ojos {
+            position: relative;
+            display: inline-block;
+        }
+
+       .cuadrado-trasparente {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: transparent; /* Hace que el texto sea transparente por defecto */
+            animation: changeColor 5s infinite; /* 5 segundos para cambiar de color, repetición infinita */
+        }
+
+        @keyframes changeColor {
+       0% { color: red; }
+        5% { color: blue; }
+        10% { color: green; }
+        15% { color: cyan; }
+        20% { color: magenta; }
+        25% { color: yellow; }
+        30% { color: orange; }
+        35% { color: pink; }
+        40% { color: purple; }
+        45% { color: brown; }
+        50% { color: rgb(255, 0, 0); }
+        55% { color: rgb(0, 255, 0); }
+        60% { color: rgb(0, 0, 255); }
+        65% { color: rgb(255, 0, 255); }
+        70% { color: rgb(255, 255, 0); }
+        75% { color: rgb(255, 128, 0); }
+        80% { color: rgb(128, 0, 255); }
+        85% { color: rgb(0, 255, 128); }
+        90% { color: rgb(255, 0, 128); }
+        95% { color: rgb(128, 255, 0); }
+        100% { color: black; }
+    }
+
+
+   @keyframes moveText {
+            0% {
+                transform: translate(-50%, -50%);
+            }
+            100% {
+                transform: translate(0%, 0%);
+            }
+        }
+.firstline {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Creepster', cursive;
+            animation: moveText 10s ease infinite;
+        }
+.secondline{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Creepster', cursive;
+            animation: moveText 10s ease infinite;
+        }
